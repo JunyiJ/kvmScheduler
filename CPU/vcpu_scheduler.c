@@ -3,7 +3,9 @@
 #include <stdio.h>
 #include <assert.h>
 #include <libvirt/libvirt.h> 
+
 const long nanosec = 1000000000;
+
 void init_vcpu_usage(double *vcpu_usage, int numDomains, int maxcpus) {
     for(int i = 0; i < numDomains; i++) {
         for (int j = 0; j < maxcpus; j++) {
